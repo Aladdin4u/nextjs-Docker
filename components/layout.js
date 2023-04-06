@@ -7,13 +7,10 @@ import {
   FaTwitter,
   FaInstagram,
   FaPhoneAlt,
-  FaPhoneSquareAlt,
-  FaMailBulk,
-  FaMobileAlt,
-  FaSearchLocation,
+  FaStar
 } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
-import { MdLocationCity, MdLocationOn } from "react-icons/md";
+import { FiMail, } from "react-icons/fi";
+import { MdLocationOn } from "react-icons/md";
 import Navbar from "./navbar/navbar";
 import Header from "./header/header";
 
