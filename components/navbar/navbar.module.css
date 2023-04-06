@@ -5,6 +5,8 @@
     padding-left: 50px;
     align-items: center;
     background-color: transparent;
+    color: blue;
+    font-size: medium;
 }
 .nav_title {
     margin-right: auto;

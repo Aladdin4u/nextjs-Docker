@@ -2,7 +2,18 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaPhoneAlt,
+  FaPhoneSquareAlt,
+  FaMailBulk,
+  FaMobileAlt,
+  FaSearchLocation,
+} from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import { MdLocationCity, MdLocationOn } from "react-icons/md";
 import Navbar from "./navbar/navbar";
 import Header from "./header/header";
 
@@ -70,67 +81,78 @@ export default function Layout({ children, home }) {
         </div>
       </section>
       <section className={styles.header} id="services">
-        <h1 className={utilStyles.heading2Xl}>SERVICES</h1>
-        <p>Services we render and open hours</p>
+        <h1 className={utilStyles.heading2Xl}>SERVICES AND OPEN HOURS</h1>
+        <h6>Monday - Saturday 8:30am - 7pm</h6>
+        <button className={styles.btn}>Contact Us</button>
         <div>
-          <div className={styles.grid_2}>
-            <div className={styles.grid_4}>
-              <div className={styles.card}>
-                <Image
-                  priority
-                  src="/images/s-o-c-i-a-l-c-u-t-7KkDiSs5UdQ-unsplash.jpg"
-                  className={styles.card_image}
-                  height={200}
-                  width={200}
-                  alt=""
-                />
-                <div className={styles.card_desc}>Ankara</div>
-              </div>
-              <div className={styles.card}>
-                <Image
-                  priority
-                  src="/images/junior-reis-c7kxs1aA4v8-unsplash.jpg"
-                  className={styles.card_image}
-                  height={200}
-                  width={200}
-                  alt=""
-                />
-                <div className={styles.card_desc}>English</div>
-              </div>
-              <div className={styles.card}>
-                <Image
-                  priority
-                  src="/images/pedro-vit-nxssxDuytMA-unsplash.jpg"
-                  className={styles.card_image}
-                  height={200}
-                  width={200}
-                  alt=""
-                />
-                <div className={styles.card_desc}>Native</div>
-              </div>
-              <div className={styles.card}>
-                <Image
-                  priority
-                  src="/images/prince-akachi-6NhEFn3aqjc-unsplash.jpg"
-                  className={styles.card_image}
-                  height={200}
-                  width={200}
-                  alt=""
-                />
-                <div className={styles.card_desc}>Senator</div>
-              </div>
+          <div className={styles.grid_4}>
+            <div className={styles.card}>
+              <Image
+                priority
+                src="/images/s-o-c-i-a-l-c-u-t-7KkDiSs5UdQ-unsplash.jpg"
+                className={styles.card_image}
+                height={200}
+                width={200}
+                alt=""
+              />
+              <div className={styles.card_desc}>Ankara</div>
             </div>
-              <div>
-                <h5>Open Hours</h5>
-                <h6>Monday - 8:30am - 7pm</h6>
-                <h6>Tuesday - 8:30am - 7pm</h6>
-                <h6>Wednesday - 8:30am - 7pm</h6>
-                <h6>Thursday - 8:30am - 7pm</h6>
-                <h6>Friday - 8:30am - 7pm</h6>
-                <h6>Saturday - 8:30am - 7pm</h6>
-                <button>book Appointment</button>
-              </div>
+            <div className={styles.card}>
+              <Image
+                priority
+                src="/images/junior-reis-c7kxs1aA4v8-unsplash.jpg"
+                className={styles.card_image}
+                height={200}
+                width={200}
+                alt=""
+              />
+              <div className={styles.card_desc}>English</div>
+            </div>
+            <div className={styles.card}>
+              <Image
+                priority
+                src="/images/pedro-vit-nxssxDuytMA-unsplash.jpg"
+                className={styles.card_image}
+                height={200}
+                width={200}
+                alt=""
+              />
+              <div className={styles.card_desc}>Native</div>
+            </div>
+            <div className={styles.card}>
+              <Image
+                priority
+                src="/images/prince-akachi-6NhEFn3aqjc-unsplash.jpg"
+                className={styles.card_image}
+                height={200}
+                width={200}
+                alt=""
+              />
+              <div className={styles.card_desc}>Senator</div>
+            </div>
           </div>
+        </div>
+      </section>
+      <section className={styles.header}>
+        <Image
+          priority
+          src="/images/prince-akachi-6NhEFn3aqjc-unsplash.jpg"
+          className={utilStyles.borderCircle}
+          height={200}
+          width={200}
+          alt=""
+        />
+        <div className={styles.desc}>
+          <p>ABout Me, The Fashion Designer</p>
+          <p>
+            Just me, myself and I, exploring the universe of unknownment. I have
+            a heart of love and an interest of lorem ipsum and mauris neque quam
+            blog. I want to share my world with you. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla.
+          </p>
         </div>
       </section>
       <section className={styles.header} id="contact">
@@ -138,11 +160,11 @@ export default function Layout({ children, home }) {
         <p>Let us Known your next design</p>
         <div className={styles.grid_2}>
           <div>
-            <i class="fa fa-map-marker"></i> Lagos, Nigeria
+            <MdLocationOn /> Lagos, Nigeria
             <br />
-            <i class="fa fa-phone"></i> Phone: +00 151515
+            <FaPhoneAlt /> Phone: +00 151515
             <br />
-            <i class="fa fa-envelope"> </i> Email: mail@mail.com
+            <FiMail /> Email: mail@mail.com
             <br />
           </div>
           <div>
@@ -181,64 +203,16 @@ export default function Layout({ children, home }) {
           <div className={styles.footer_card_info}>
             <h4>Deens wears</h4>
             <p>Home made quality</p>
-            <p>copyright 2023&copy;</p>
-          </div>
-          <div className={styles.footer_card_info}>
-            <h4>Links</h4>
-            <ul>
-              <li>
-                <Link href="#about">About</Link>
-              </li>
-              <li>
-                <Link href="#about">Offers</Link>
-              </li>
-              <li>
-                <Link href="#services">services</Link>
-              </li>
-              <li>
-                <Link href="#contact">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.footer_card_info}>
-            <h4>follow us on social media</h4>
+            <div className={styles.footer_social}>
+              <FaFacebook />
+              <FaTwitter />
+              <FaInstagram />
+            </div>
+
+            <p>&copy;copyright 2023 by Deens wears. All Right Reserved</p>
           </div>
         </div>
       </footer>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/prince-akachi-6NhEFn3aqjc-unsplash.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt=""
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
-                alt=""
-              />
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {name}
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
     </div>
   );
 }

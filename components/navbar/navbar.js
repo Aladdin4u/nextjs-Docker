@@ -7,8 +7,8 @@ export default function Navbar() {
             <Link href="/" className={navStyles.nav_title}>Deen Wears</Link>
             <div className={navStyles.nav_links}>
             <Link href="#services">services</Link>
-            <Link href="#pricing">pricing</Link>
-            <Link href="#contact">Contact</Link>
+            <Link href="#pricing">About</Link>
+            <Link href="#contact">Contact Us</Link>
             </div>
         </nav>
     )
