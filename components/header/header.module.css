@@ -113,3 +113,17 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 412px) {
+    .display_container_jumbo{
+        font-size: 24px;
+    }
+    .display_container_line {
+        width: 20px;
+        border: 1px solid white;
+        display: block;
+       }
+    .b {
+        font-size: 12px;
+    }
+  }

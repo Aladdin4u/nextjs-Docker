@@ -12,7 +12,7 @@ export default function Footer() {
     <div className={styles.footer_card_desc}>
       <div className={styles.footer_card_info}>
         <h4>Deens wears</h4>
-        <p>Home made quality</p>
+        <span>Follow us:</span>
         <div className={styles.footer_social}>
           <FaFacebook className={styles.footer_social_icon} />
           <FaTwitter className={styles.footer_social_icon} />

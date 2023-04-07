@@ -24,7 +24,7 @@ export default function Header() {
               <hr className={headerStyles.display_container_line} />
               <hr className={headerStyles.display_container_line} />
             </div>
-            <b>WHO YOU ARE</b>
+            <b className={headerStyles.b}>WHO YOU ARE</b>
             <div>
               <hr className={headerStyles.display_container_line} />
               <hr className={headerStyles.display_container_line} />
@@ -49,7 +49,7 @@ export default function Header() {
               <hr className={headerStyles.display_container_line} />
               <hr className={headerStyles.display_container_line} />
             </div>
-            <b>STATEMENT</b>
+            <b className={headerStyles.b}>STATEMENT</b>
             <div>
               <hr className={headerStyles.display_container_line} />
               <hr className={headerStyles.display_container_line} />
@@ -74,7 +74,7 @@ export default function Header() {
               <hr className={headerStyles.display_container_line} />
               <hr className={headerStyles.display_container_line} />
             </div>
-            <b>TO THE FINEST DETAILS</b>
+            <b className={headerStyles.b}>TO THE FINEST DETAILS</b>
             <div>
               <hr className={headerStyles.display_container_line} />
               <hr className={headerStyles.display_container_line} />
@@ -99,7 +99,7 @@ export default function Header() {
               <hr className={headerStyles.display_container_line} />
               <hr className={headerStyles.display_container_line} />
             </div>
-            <b>WHO YOU ARE</b>
+            <b className={headerStyles.b}>WHO YOU ARE</b>
             <div>
               <hr className={headerStyles.display_container_line} />
               <hr className={headerStyles.display_container_line} />

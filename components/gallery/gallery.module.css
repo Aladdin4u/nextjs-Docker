@@ -16,4 +16,8 @@
     grid-template-columns: auto auto;
     gap: 10px;
   }
- 
+  @media (max-width: 412px) {
+    .grid{
+      grid-template-columns: auto;
+    }
+  }

@@ -8,6 +8,7 @@
     background-color: #2d2c2c;
     width: 100%;
     color: white;
+    padding: 64px;
   }
   .header > * {
     margin: 10px;
@@ -66,7 +67,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
   .form_data > div {
 margin: 10px;
@@ -107,4 +107,18 @@ gap: 10px;
 
   @media (max-width: 800px) {
     .grid_2{flex-direction: column;}
+  }
+  @media (max-width: 412px) {
+    .half {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+    .header {
+      text-align: center;
+    }
+    .form_data > div {
+      margin: 5px;
+        }
   }
