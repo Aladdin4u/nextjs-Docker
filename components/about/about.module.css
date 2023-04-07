@@ -1,0 +1,22 @@
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #ccc;
+    width: 100%;
+  }
+  .header > * {
+    margin: 10px;
+  }
+  
+  .backToHome {
+    margin: 3rem 0 0;
+  }
+  .desc {
+    padding: 15px;
+    max-width: 800px;
+    text-align: center;
+  }

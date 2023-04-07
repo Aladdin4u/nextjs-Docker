@@ -4,22 +4,6 @@ import utilStyles from "../../styles/utils.module.css";
 import {FaStar} from "react-icons/fa";
 
 export default function Header() {
-  // var myIndex = 0;
-  // carousel();
-
-  // function carousel() {
-  //   var i;
-  //   var x = document.querySelectorAll("#mySlides");
-  //   for (i = 0; i < x.length; i++) {
-  //     x[i].style.display = "none";
-  //   }
-  //   myIndex++;
-  //   if (myIndex > x.length) {
-  //     myIndex = 1;
-  //   }
-  //   x[myIndex - 1].style.display = "block";
-  //   setTimeout(carousel, 4000);
-  // }
   return (
     <div className={headerStyles.container} id="mySlides">
       <div className={headerStyles.slider}>
@@ -33,7 +17,7 @@ export default function Header() {
           alt=""
         />
         <div className={headerStyles.display_container_center}>
-          <p><FaStar/> Your Style <FaStar/></p>
+          <p className={headerStyles.animateTop}><FaStar/> Your Style <FaStar/></p>
           <h1 className={headerStyles.display_container_jumbo}>DEFINES</h1>
           <div className={headerStyles.display_container_desc}>
             <div>
@@ -83,7 +67,7 @@ export default function Header() {
           alt=""
         />
         <div className={headerStyles.display_container_center}>
-          <p><FaStar/> suited to <FaStar/></p>
+          <p className={headerStyles.animateTop}><FaStar/> suited to <FaStar/></p>
           <h1 className={headerStyles.display_container_jumbo}>PERFECTION</h1>
           <div className={headerStyles.display_container_desc}>
             <div>

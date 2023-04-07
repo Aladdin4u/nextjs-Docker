@@ -1,18 +1,50 @@
 .nav {
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: 70px;
-    padding-left: 50px;
+    padding-left: 10px;
     align-items: center;
-    background-color: transparent;
-    color: blue;
-    font-size: medium;
+    background-color: black;
+    color: white;
+    font-size: large;
 }
 .nav_title {
     margin-right: auto;
 }
+.nav_span {
+    color: rgb(58, 231, 58);
+    font-weight: 900;
+}
 .nav_links {
     display: flex;
+    position: relative;
+    flex-direction: column;
     justify-content: space-around;
-    width: 30%;
+    margin: 10px;
+}
+.menu {
+    position: fixed;
+    top: 3;
+    right: 0;
+    margin-right: 10px;
+    /* z-index: 1; */
+}
+.openmenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 160px;
+    height: 100%;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    z-index: 1;
+}
+.closenmenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: bold;
 }
