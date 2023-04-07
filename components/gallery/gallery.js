@@ -6,7 +6,7 @@ export default function Gallery() {
   return (
     <section className={styles.header}>
         <h1 className={utilStyles.heading2Xl}>Gallery</h1>
-        <p>Our experirence always updates the latest styles</p>
+        <p>Our collections</p>
         <div>
           <div className={styles.grid}>
             <Image

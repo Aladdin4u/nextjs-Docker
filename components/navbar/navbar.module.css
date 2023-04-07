@@ -11,10 +11,11 @@
 }
 .nav_title {
     margin-right: auto;
+    font-weight: 900;
 }
 .nav_span {
     color: rgb(58, 231, 58);
-    font-weight: 900;
+    font-weight: 500;
 }
 .nav_links {
     display: flex;
